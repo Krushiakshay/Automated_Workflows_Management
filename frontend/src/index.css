@@ -10,51 +10,68 @@
 
 @layer base {
   :root {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 98%;
+    --background: 45 38% 93%;
+    --foreground: 29 16% 25%;
 
-    --card: 222 47% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 42 100% 98%;
+    --card-foreground: 29 16% 25%;
 
-    --popover: 222 47% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 42 100% 98%;
+    --popover-foreground: 29 16% 25%;
 
-    --primary: 190 100% 50%;
-    --primary-foreground: 222 47% 6%;
+    --primary: 30 34% 49%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 270 70% 60%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 40 33% 83%;
+    --secondary-foreground: 29 19% 30%;
 
-    --muted: 222 30% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 39 31% 89%;
+    --muted-foreground: 33 18% 41%;
 
-    --accent: 190 100% 50%;
-    --accent-foreground: 222 47% 6%;
+    --accent: 43 31% 75%;
+    --accent-foreground: 29 16% 25%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 10 55% 46%;
+    --destructive-foreground: 0 0% 100%;
 
-    --success: 160 84% 45%;
-    --success-foreground: 222 47% 6%;
+    --success: 120 40% 45%;
+    --success-foreground: 0 0% 100%;
 
-    --warning: 38 92% 50%;
-    --warning-foreground: 222 47% 6%;
+    --warning: 35 80% 50%;
+    --warning-foreground: 29 16% 25%;
 
-    --border: 222 30% 18%;
-    --input: 222 30% 18%;
-    --ring: 190 100% 50%;
+    --border: 40 31% 79%;
+    --input: 40 31% 79%;
+    --ring: 30 34% 49%;
 
     --radius: 0.75rem;
 
+    /* Chart Colors */
+    --chart-1: 30 34% 49%;
+    --chart-2: 31 30% 43%;
+    --chart-3: 34 33% 34%;
+    --chart-4: 29 32% 57%;
+    --chart-5: 30 33% 63%;
+
+    /* Sidebar Colors */
+    --sidebar-background: 39 31% 89%;
+    --sidebar-foreground: 29 16% 25%;
+    --sidebar-primary: 30 34% 49%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 43 31% 75%;
+    --sidebar-accent-foreground: 29 16% 25%;
+    --sidebar-border: 40 31% 79%;
+    --sidebar-ring: 30 34% 49%;
+
     /* Custom design tokens */
-    --glow-primary: 0 0 20px hsl(190 100% 50% / 0.4);
-    --glow-secondary: 0 0 20px hsl(270 70% 60% / 0.4);
-    --glow-success: 0 0 15px hsl(160 84% 45% / 0.4);
+    --glow-primary: 0 0 20px hsl(30 34% 49% / 0.4);
+    --glow-secondary: 0 0 20px hsl(40 33% 83% / 0.4);
+    --glow-success: 0 0 15px hsl(120 40% 45% / 0.4);
     
-    --gradient-primary: linear-gradient(135deg, hsl(190 100% 50%) 0%, hsl(270 70% 60%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(222 47% 10%) 0%, hsl(222 47% 6%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(222 47% 8%) 0%, hsl(222 47% 4%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(190 100% 50% / 0.15) 0%, transparent 70%);
+    --gradient-primary: linear-gradient(135deg, hsl(30 34% 49%) 0%, hsl(40 33% 83%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(42 100% 98%) 0%, hsl(45 38% 93%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(45 38% 93%) 0%, hsl(39 31% 89%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(30 34% 49% / 0.15) 0%, transparent 70%);
 
     --font-display: 'Orbitron', monospace;
     --font-body: 'Inter', system-ui, sans-serif;
