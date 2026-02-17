@@ -1,7 +1,10 @@
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Play, Activity, Users, TrendingUp, Zap } from 'lucide-react';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Effects */}
@@ -26,14 +29,14 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary text-sm mb-8 animate-fade-in">
             <div className="w-2 h-2 rounded-full bg-success animate-pulse" />
-            <span>IOMP Project</span>
+            <span>Enterprise Edition</span>
           </div>
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6 animate-fade-in delay-100">
             <span className="text-foreground">Automated</span>
             <br />
-            <span className="gradient-text glow-text">Workforce Management</span>
+            <span className="gradient-text glow-text text-3xl sm:text-4xl md:text-5xl lg:text-6xl block mt-2">Workforce Management</span>
           </h1>
 
           {/* Subtitle */}
@@ -43,22 +46,25 @@ const HeroSection = () => {
 
           {/* Description */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in delay-300">
-            AI-powered workforce automation that transforms how organizations track attendance, 
-            monitor productivity, and make data-driven decisions in real-time.
+            Leverage AI-driven insights to optimize workforce planning, operational efficiency, and resource allocation in real-time.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in delay-400">
-            <Button variant="hero" size="xl" className="group" asChild>
-              <a href="#dashboard">
-                View Dashboard
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in delay-400">
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="group" 
+              onClick={() => navigate('/home')}
+            >
+              Get Started
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform ml-2" />
             </Button>
-            <Button variant="hero-outline" size="xl" asChild>
+            <Button variant="outline" size="xl" className="group border-primary/20 hover:bg-primary/5" asChild>
               <a href="#problem">
-                <Play className="w-5 h-5" />
-                Project Overview
+                <div className="flex items-center gap-2">
+                  <span>Project Overview</span>
+                </div>
               </a>
             </Button>
           </div>

@@ -1,53 +1,41 @@
-import { Check, X, ArrowRight, Rocket } from 'lucide-react';
+import { TrendingUp, Users, Zap, Shield, BarChart3, Globe } from 'lucide-react';
 
-const advantages = [
-  'Real-time visibility into workforce status',
-  'Automated data collection and processing',
-  'AI-powered insights and recommendations',
-  'Reduced manual errors and time theft',
-  'Improved decision-making with data',
-  'Scalable to any organization size',
-  'Enhanced compliance and audit trails',
-  'Cost savings through efficiency gains',
-];
-
-const limitations = [
-  'Data is simulated, not from real sources',
-  'No persistent database storage',
-  'AI predictions are conceptual demonstrations',
-  'Requires modern browser for best experience',
-];
-
-const futureEnhancements = [
+const benefits = [
   {
-    title: 'Real Database Integration',
-    description: 'Connect to SQL or NoSQL databases for persistent data storage and historical analysis.',
+    icon: TrendingUp,
+    title: 'Reduced Operational Costs',
+    description: 'Optimize resource allocation and reduce overtime costs through intelligent scheduling and forecasting.',
   },
   {
-    title: 'Machine Learning Models',
-    description: 'Implement TensorFlow.js or similar for actual predictive analytics and pattern recognition.',
+    icon: Users,
+    title: 'Improved Productivity',
+    description: 'Real-time monitoring and performance metrics drive employee engagement and output.',
   },
   {
-    title: 'IoT & Biometric Integration',
-    description: 'Support for fingerprint scanners, facial recognition, and RFID-based attendance systems.',
+    icon: Shield,
+    title: 'Higher Service Quality',
+    description: 'Ensure the right skills are available at the right time to meet customer demand and service levels.',
   },
   {
-    title: 'Mobile Application',
-    description: 'Native iOS and Android apps for on-the-go workforce management and notifications.',
+    icon: Zap,
+    title: 'Faster Decision Making',
+    description: 'Instant access to real-time data enables managers to resolve issues before they impact operations.',
   },
   {
-    title: 'API Integrations',
-    description: 'Connect with HR systems, payroll software, and project management tools.',
+    icon: Globe,
+    title: 'Scalable Architecture',
+    description: 'Cloud-native design that grows with your organization from a single site to global operations.',
   },
   {
-    title: 'Advanced Reporting',
-    description: 'Exportable reports, scheduled emails, and customizable dashboards for executives.',
+    icon: BarChart3,
+    title: 'Data-Driven Culture',
+    description: 'Transform subjective management into objective, metric-based performance optimization.',
   },
 ];
 
 const AdvantagesSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="benefits" className="py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/5 to-background" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
@@ -56,97 +44,41 @@ const AdvantagesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            Evaluation
+            ROI & Value
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-            <span className="text-foreground">Advantages &</span>{' '}
-            <span className="gradient-text">Future Scope</span>
+            <span className="text-foreground">Strategic</span>{' '}
+            <span className="gradient-text">Benefits</span>
           </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Delivering measurable value across every level of your organization.
+          </p>
         </div>
 
-        {/* Advantages & Limitations */}
-        <div className="grid md:grid-cols-2 gap-8 mb-20">
-          {/* Advantages */}
-          <div className="card-futuristic border-success/30">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 rounded-lg bg-success/20 text-success">
-                <Check className="w-6 h-6" />
-              </div>
-              <h3 className="font-display font-bold text-xl text-foreground">
-                Advantages
-              </h3>
-            </div>
-            <ul className="space-y-3">
-              {advantages.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-success/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check className="w-3 h-3 text-success" />
-                  </div>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Limitations */}
-          <div className="card-futuristic border-warning/30">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 rounded-lg bg-warning/20 text-warning">
-                <X className="w-6 h-6" />
-              </div>
-              <h3 className="font-display font-bold text-xl text-foreground">
-                Current Limitations
-              </h3>
-            </div>
-            <ul className="space-y-3">
-              {limitations.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-warning/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <X className="w-3 h-3 text-warning" />
-                  </div>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Future Enhancements */}
-        <div>
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center gap-2 text-primary mb-4">
-              <Rocket className="w-6 h-6" />
-              <span className="font-display font-semibold">Future Enhancements</span>
-            </div>
-            <p className="text-muted-foreground">
-              Potential improvements and extensions for the system
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {futureEnhancements.map((enhancement, index) => (
-              <div
-                key={index}
-                className="card-futuristic group hover:border-primary/50 transition-all"
-              >
-                <div className="flex items-start gap-3">
-                  <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1 group-hover:translate-x-1 transition-transform" />
-                  <div>
-                    <h4 className="font-display font-semibold text-foreground mb-2">
-                      {enhancement.title}
-                    </h4>
-                    <p className="text-muted-foreground text-sm">
-                      {enhancement.description}
-                    </p>
-                  </div>
+        {/* Benefits Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {benefits.map((benefit, index) => (
+            <div key={index} className="card-futuristic group hover:border-primary/50 transition-all duration-300">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
+                  <benefit.icon className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="font-display font-semibold text-lg text-foreground mb-2">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {benefit.description}
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
 };
+
 
 export default AdvantagesSection;

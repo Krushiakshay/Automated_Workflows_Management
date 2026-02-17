@@ -1,41 +1,31 @@
-import { Brain, Cpu, LineChart, Bell, Database, Lightbulb } from 'lucide-react';
+import { Brain, Cpu, LineChart, Database } from 'lucide-react';
 
 const concepts = [
   {
     icon: Database,
-    title: 'Data Collection Layer',
-    description: 'Continuous ingestion of workforce data from multiple sources including time systems, activity logs, and performance metrics.',
+    title: 'Data Collection',
+    description: 'Continuous ingestion of raw workforce data from biometric devices, apps, and system logs.',
   },
   {
     icon: Cpu,
-    title: 'Processing Engine',
-    description: 'Real-time JavaScript algorithms process incoming data streams, normalize values, and prepare them for analysis.',
+    title: 'AI Processing',
+    description: 'Real-time algorithms process data streams instantly to normalize and structure information.',
   },
   {
     icon: Brain,
-    title: 'AI Analysis Module',
-    description: 'Pattern recognition algorithms identify trends, anomalies, and correlations in workforce behavior and performance.',
+    title: 'Insight Generation',
+    description: 'Pattern recognition models identify trends, anomalies, and efficiency opportunities.',
   },
   {
     icon: LineChart,
-    title: 'Predictive Analytics',
-    description: 'Machine learning models forecast future trends including attendance patterns, productivity cycles, and resource needs.',
-  },
-  {
-    icon: Bell,
-    title: 'Alert Generation',
-    description: 'Threshold-based monitoring triggers intelligent alerts when metrics deviate from expected ranges or patterns.',
-  },
-  {
-    icon: Lightbulb,
-    title: 'Recommendation Engine',
-    description: 'AI-driven suggestions for workforce optimization, scheduling, and resource allocation based on analyzed data.',
+    title: 'Automated Execution',
+    description: 'Intelligent systems automatically schedule resources and trigger corrective actions.',
   },
 ];
 
 const AILogicSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="how-it-works" className="py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-muted/20 to-background" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary/50 to-transparent" />
@@ -44,19 +34,19 @@ const AILogicSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1 rounded-full bg-secondary/10 text-secondary text-sm font-medium mb-4">
-            Intelligence
+            Workflow
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-            <span className="text-foreground">AI & Real-Time</span>{' '}
-            <span className="gradient-text">Logic</span>
+            <span className="text-foreground">How It</span>{' '}
+            <span className="gradient-text">Works</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Understanding the conceptual framework behind our AI-powered analytics engine.
+            A seamless four-step process from data ingestion to actionable intelligence.
           </p>
         </div>
 
         {/* Concepts Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {concepts.map((concept, index) => (
             <div
               key={index}

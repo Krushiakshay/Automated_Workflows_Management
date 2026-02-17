@@ -1,96 +1,85 @@
-Create a professional landing page for ATRIUS.
+Create a separate Landing Page and Home Page for the project.
 
-ATRIUS is an AI-driven smart networking platform designed for hackathons, conferences, and professional events. It enables meaningful, goal-oriented connections by analyzing participant profiles, skills, interests, goals, and real-time availability. The platform uses intelligent matching and embedding-based similarity to recommend the right people at the right time. It also includes a community-driven content feed for sharing technology updates, news, and insights during and beyond events.
+The Landing Page is a marketing page.
+The Home Page is the actual application dashboard.
 
----
+Do NOT merge them.
 
-Landing Page Requirements:
-
-- Modern, minimal, premium design
-- Clean layout with strong typography hierarchy
-- Professional tone (not playful)
-- Investor-ready presentation
-- Fully responsive
-- No hardcoded dummy data
+Do NOT modify Redux, services, or backend logic.
 
 ---
 
-Sections to Include:
+ROUTING STRUCTURE:
 
-1. Hero Section
-   - Product name: ATRIUS
-   - Clear headline describing intelligent networking
-   - Short supporting paragraph
-   - Primary CTA button (e.g., "Get Started")
-   - Secondary CTA (e.g., "Learn More")
-
-2. Problem Section
-   - Explain issues with traditional networking:
-     - Manual discovery
-     - Static connections
-     - Information overload
-     - Missed collaboration opportunities
-
-3. Solution Section
-   - Explain how ATRIUS solves this using:
-     - Structured profiles
-     - AI-driven matching
-     - Real-time availability
-     - Intelligent recommendations
-     - Event-aware connections
-
-4. Features Section
-   - Smart Match Recommendations
-   - Real-Time Intent-Based Networking
-   - Community Content Feed
-   - Adaptive Event Intelligence
-   - Scalable for Professional & Enterprise Ecosystems
-
-5. How It Works Section
-   - Create structured profile
-   - AI analyzes compatibility
-   - Get matched instantly
-   - Connect and collaborate
-
-6. Vision Section
-   - Future expansion toward career platforms, professional communities, and enterprise ecosystems
-
-7. Footer
-   - Minimal
-   - Clean navigation links
-   - Copyright
+"/" → LandingPage  
+"/home" → HomePage  
 
 ---
 
-Design Rules:
+LANDING PAGE REQUIREMENTS:
 
-Use the following brand color palette:
-
-Primary: #a67c52  
-Secondary: #e2d8c3  
-Accent: #d4c8aa  
-Background: #f5f1e6  
-Card: #fffcf5  
-Text: #4a3f35  
-Border: #dbd0ba  
-
-- No purple
-- No blue-heavy theme
-- Warm, premium earth-tone aesthetic
-- Soft shadows
-- Rounded corners
-- Elegant typography (Inter or Plus Jakarta Sans)
-- Spacious layout with strong visual hierarchy
+1. Route: "/"
+2. No application sidebar or dashboard layout.
+3. Marketing-style layout.
+4. Includes:
+   - Navbar (logo + section links + "View Dashboard" button)
+   - Hero Section:
+       Title: "Automated Workforce Management"
+       Subtitle: "Using Real-Time Analytics"
+       Short description from abstract
+       Primary button: "Get Started"
+       Secondary button: "Project Overview"
+   - Feature cards section
+   - Problem section
+   - Solution section
+   - Benefits section
+   - Footer
+5. Clean enterprise premium design.
+6. Fully responsive.
 
 ---
 
-The landing page should feel:
+IMPORTANT:
 
-- Intelligent
-- Warm
-- Premium
-- Structured
-- Event-ready
-- Trustworthy
+When user clicks "Get Started":
 
-Generate a clean, production-ready landing page UI consistent with the ATRIUS brand identity.
+- Use React Router navigation
+- Use useNavigate() from react-router-dom
+- Navigate to "/home"
+- Do NOT reload the page
+- Do NOT use <a href="">
+- Must be client-side navigation
+
+---
+
+HOME PAGE REQUIREMENTS:
+
+1. Route: "/home"
+2. This is the actual application dashboard.
+3. Should include:
+   - App navigation layout
+   - Sidebar (if exists)
+   - Dashboard components
+   - Real application content
+
+---
+
+EXPECTED USER FLOW:
+
+User visits "/"
+User sees Landing Page
+User clicks "Get Started"
+App navigates smoothly to "/home"
+Home Page loads with dashboard layout
+
+---
+
+CONSTRAINTS:
+
+- No page refresh
+- No breaking existing logic
+- No architecture changes
+- Keep folder structure clean
+- Separate layout wrappers for Landing and Home
+
+Implement this routing and separation cleanly.

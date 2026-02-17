@@ -47,8 +47,8 @@ const ProblemSection = () => {
             The Challenge
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-            <span className="text-foreground">Problem</span>{' '}
-            <span className="gradient-text">Statement</span>
+            <span className="text-foreground">The Workforce</span>{' '}
+            <span className="gradient-text">Challenge</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Traditional workforce management systems suffer from critical limitations 

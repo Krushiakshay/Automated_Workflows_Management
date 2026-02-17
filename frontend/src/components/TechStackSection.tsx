@@ -98,8 +98,8 @@ const TechStackSection = () => {
         {/* Integration Note */}
         <div className="mt-16 p-6 rounded-xl border border-border bg-card/50 text-center">
           <p className="text-muted-foreground">
-            <span className="text-foreground font-semibold">Note:</span> While this project uses React for demonstration, 
-            all real-time logic is implemented using standard JavaScript patterns that work in any environment.
+            <span className="text-foreground font-semibold">Enterprise-Grade:</span> Built with a modular architecture that ensures
+            high availability, fault tolerance, and seamless integration with existing enterprise systems.
           </p>
         </div>
       </div>

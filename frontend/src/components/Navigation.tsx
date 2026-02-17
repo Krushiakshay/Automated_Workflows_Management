@@ -1,20 +1,21 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Activity } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'Problem', href: '#problem' },
-  { label: 'Solution', href: '#solution' },
-  { label: 'Features', href: '#features' },
-  { label: 'Dashboard', href: '#dashboard' },
-  { label: 'Architecture', href: '#architecture' },
-  { label: 'Tech Stack', href: '#tech-stack' },
+  { label: 'Home', href: '/#home' },
+  { label: 'Problem', href: '/#problem' },
+  { label: 'Solution', href: '/#solution' },
+  { label: 'Features', href: '/#features' },
+  { label: 'Architecture', href: '/#architecture' },
+  { label: 'Tech Stack', href: '/#tech-stack' },
 ];
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,13 +36,13 @@ const Navigation = () => {
       <div className="section-container">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2 group">
+          <a href="/#home" className="flex items-center gap-2 group">
             <div className="relative">
               <Activity className="w-8 h-8 text-primary animate-pulse-glow" />
               <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full" />
             </div>
             <span className="font-display font-bold text-lg hidden sm:block gradient-text">
-              AWMS
+              AWM
             </span>
           </a>
 
@@ -56,8 +57,8 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="hero" size="sm" asChild>
-              <a href="#dashboard">View Dashboard</a>
+            <Button variant="hero" size="sm" onClick={() => navigate('/home')}>
+              View Dashboard
             </Button>
           </div>
 
@@ -84,8 +85,8 @@ const Navigation = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" className="mt-4" asChild>
-                <a href="#dashboard">View Dashboard</a>
+              <Button variant="hero" className="mt-4" onClick={() => { setIsMobileOpen(false); navigate('/home'); }}>
+                View Dashboard
               </Button>
             </div>
           </div>

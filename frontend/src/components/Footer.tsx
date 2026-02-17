@@ -1,4 +1,4 @@
-import { Activity, GraduationCap, Heart } from 'lucide-react';
+import { Activity } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -15,30 +15,26 @@ const Footer = () => {
               <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full" />
             </div>
             <span className="font-display font-bold text-2xl gradient-text">
-              AWMS
+              AWM
             </span>
           </div>
 
           {/* Title */}
           <h3 className="font-display font-bold text-xl text-foreground mb-2">
-            Automated Workforce Management System
+            Automated Workforce Management
           </h3>
           <p className="text-muted-foreground mb-8">
-            Using Real-Time Analytics
+            Enterprise Workforce Intelligence
           </p>
 
-          {/* Academic Badge */}
-          <div className="flex items-center gap-2 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 mb-8">
-            <GraduationCap className="w-5 h-5 text-primary" />
-            <span className="text-foreground font-medium">IOMP project</span>
-          </div>
-
-          {/* Credits */}
-          <div className="text-muted-foreground text-sm space-y-2">
-            <p>Developed as part of academic curriculum requirements</p>
-            <p className="flex items-center justify-center gap-1">
-              Made with <Heart className="w-4 h-4 text-destructive animate-pulse" /> for learning and demonstration
-            </p>
+          {/* Links */}
+          <div className="flex gap-6 mb-8 text-sm font-medium text-muted-foreground">
+            <a href="/#problem" className="hover:text-primary transition-colors">About</a>
+            <a href="/#features" className="hover:text-primary transition-colors">Platform</a>
+            <a href="/#how-it-works" className="hover:text-primary transition-colors">How It Works</a>
+            <a href="/#benefits" className="hover:text-primary transition-colors">Benefits</a>
+            <a href="#" className="hover:text-primary transition-colors">Privacy</a>
+            <a href="#" className="hover:text-primary transition-colors">Terms</a>
           </div>
 
           {/* Divider */}
@@ -46,7 +42,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-muted-foreground text-xs">
-            © {new Date().getFullYear()} AWMS Project. All rights reserved for academic purposes.
+            © {new Date().getFullYear()} AWM Enterprise. All rights reserved.
           </p>
         </div>
       </div>

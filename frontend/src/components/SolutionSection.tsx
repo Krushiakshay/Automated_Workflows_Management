@@ -38,11 +38,11 @@ const SolutionSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1 rounded-full bg-success/10 text-success text-sm font-medium mb-4">
-            Our Approach
+            Our Solution
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-            <span className="text-foreground">Solution</span>{' '}
-            <span className="gradient-text">Overview</span>
+            <span className="text-foreground">AI-Powered</span>{' '}
+            <span className="gradient-text">Workforce Intelligence</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             A comprehensive four-stage pipeline that transforms raw workforce data 
