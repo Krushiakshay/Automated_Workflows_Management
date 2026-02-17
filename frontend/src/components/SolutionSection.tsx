@@ -3,26 +3,26 @@ import { Database, Cpu, BarChart3, Brain, ArrowDown } from 'lucide-react';
 const steps = [
   {
     icon: Database,
-    title: 'Data Collection',
-    description: 'Real-time data is collected from various input sources including biometric devices, digital check-ins, and activity logs.',
+    title: 'Real-Time Analytics',
+    description: 'Monitor workforce performance, attendance, and operational metrics as they happen.',
     color: 'primary',
   },
   {
-    icon: Cpu,
-    title: 'Real-Time Processing',
-    description: 'JavaScript-powered algorithms process incoming data streams instantly, updating the system state in milliseconds.',
+    icon: Brain,
+    title: 'AI Forecasting',
+    description: 'Predict future staffing needs and potential bottlenecks using advanced machine learning models.',
     color: 'secondary',
   },
   {
-    icon: BarChart3,
-    title: 'Analytics Visualization',
-    description: 'Processed data is transformed into intuitive charts, graphs, and dashboards for easy interpretation.',
+    icon: Cpu,
+    title: 'Automated Scheduling',
+    description: 'Automatically assign shifts and tasks based on skills, availability, and demand predictions.',
     color: 'success',
   },
   {
-    icon: Brain,
-    title: 'AI-Based Insights',
-    description: 'Machine learning models analyze patterns to provide predictive insights, alerts, and recommendations.',
+    icon: BarChart3,
+    title: 'Performance Monitoring',
+    description: 'Continuous tracking of individual and team KPIs to ensure optimal productivity levels.',
     color: 'warning',
   },
 ];
@@ -41,8 +41,8 @@ const SolutionSection = () => {
             Our Solution
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-            <span className="text-foreground">AI-Powered</span>{' '}
-            <span className="gradient-text">Workforce Intelligence</span>
+            <span className="text-foreground">Intelligent</span>{' '}
+            <span className="gradient-text">Workforce Optimization</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             A comprehensive four-stage pipeline that transforms raw workforce data 

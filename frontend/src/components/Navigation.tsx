@@ -8,7 +8,6 @@ const navLinks = [
   { label: 'Problem', href: '/#problem' },
   { label: 'Solution', href: '/#solution' },
   { label: 'Features', href: '/#features' },
-  { label: 'Architecture', href: '/#architecture' },
   { label: 'Tech Stack', href: '/#tech-stack' },
 ];
 
@@ -58,7 +57,7 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <Button variant="hero" size="sm" onClick={() => navigate('/home')}>
-              View Dashboard
+              Get Started
             </Button>
           </div>
 
@@ -86,7 +85,7 @@ const Navigation = () => {
                 </a>
               ))}
               <Button variant="hero" className="mt-4" onClick={() => { setIsMobileOpen(false); navigate('/home'); }}>
-                View Dashboard
+                Get Started
               </Button>
             </div>
           </div>

@@ -63,7 +63,7 @@ const HeroSection = () => {
             <Button variant="outline" size="xl" className="group border-primary/20 hover:bg-primary/5" asChild>
               <a href="#problem">
                 <div className="flex items-center gap-2">
-                  <span>Project Overview</span>
+                  <span>Learn More</span>
                 </div>
               </a>
             </Button>

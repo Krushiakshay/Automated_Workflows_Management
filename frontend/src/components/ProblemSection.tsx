@@ -3,33 +3,23 @@ import { AlertTriangle, Clock, Eye, BarChart3, Users, FileX } from 'lucide-react
 const problems = [
   {
     icon: Clock,
-    title: 'Manual Time Tracking',
+    title: 'Manual Scheduling',
     description: 'Traditional punch cards and manual registers lead to errors, buddy punching, and time theft.',
   },
   {
     icon: Eye,
-    title: 'Lack of Visibility',
+    title: 'Poor Visibility',
     description: 'Managers have no real-time insight into employee attendance, location, or current workload.',
   },
   {
-    icon: BarChart3,
-    title: 'No Productivity Metrics',
-    description: 'Without data analytics, measuring and improving workforce productivity becomes guesswork.',
-  },
-  {
-    icon: FileX,
-    title: 'Delayed Reporting',
+    icon: AlertTriangle,
+    title: 'Reactive Decision-Making',
     description: 'End-of-month reports arrive too late to make timely decisions or course corrections.',
   },
   {
-    icon: Users,
-    title: 'Resource Misallocation',
-    description: 'Without predictive insights, departments are often over or understaffed.',
-  },
-  {
-    icon: AlertTriangle,
-    title: 'Compliance Risks',
-    description: 'Manual systems make it difficult to maintain accurate records for audits and compliance.',
+    icon: FileX,
+    title: 'Bottlenecks and Inefficiencies',
+    description: 'Without predictive insights, departments are often over or understaffed, creating operational bottlenecks.',
   },
 ];
 
